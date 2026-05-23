@@ -1,0 +1,27 @@
+body {
+  background: #0f172a;
+  color: white;
+  font-family: Poppins, sans-serif;
+}
+
+.quiz-container {
+  width: 80%;
+  margin: auto;
+  padding: 40px;
+}
+
+.question-card {
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}

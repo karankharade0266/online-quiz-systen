@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Dashboard
+  </title>
+
+  <!-- CSS -->
+
+  <link
+    rel="stylesheet"
+    href="css/dashboard.css"
+  >
+
+  <!-- FONT AWESOME -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+</head>
+
+<body>
+
+  <!-- =========================
+       SIDEBAR
+  ========================== -->
+
+  <div class="sidebar">
+
+    <h2>
+      Quiz System
+    </h2>
+
+    <ul>
+
+      <!-- DASHBOARD -->
+
+      <li
+        onclick="
+        window.location.href=
+        'dashboard.html'
+        "
+      >
+
+        <i class="fa-solid fa-house"></i>
+
+        Dashboard
+
+      </li>
+
+      <!-- RESULTS -->
+
+      <li
+        onclick="
+        window.location.href=
+        'result.html'
+        "
+      >
+
+        <i class="fa-solid fa-chart-line"></i>
+
+        Results
+
+      </li>
+
+      <!-- LEADERBOARD -->
+
+      <li
+        onclick="
+        window.location.href=
+        'leaderboard.html'
+        "
+      >
+
+        <i class="fa-solid fa-trophy"></i>
+
+        Leaderboard
+
+      </li>
+
+      <!-- PROFILE -->
+
+      <li
+        onclick="
+        window.location.href=
+        'profile.html'
+        "
+      >
+
+        <i class="fa-solid fa-gear"></i>
+
+        Settings
+
+      </li>
+
+    </ul>
+
+  </div>
+
+  <!-- =========================
+       MAIN CONTENT
+  ========================== -->
+
+  <div class="main-content">
+
+    <!-- =========================
+         TOPBAR
+    ========================== -->
+
+    <div class="topbar">
+
+      <h1 id="welcomeText">
+        Welcome 👋
+      </h1>
+
+      <button id="logoutBtn">
+        Logout
+      </button>
+
+    </div>
+
+    <!-- =========================
+         CARDS
+    ========================== -->
+
+    <div class="cards">
+
+      <!-- TOTAL QUIZ -->
+
+      <div class="card">
+
+        <h2 id="quizCount">
+          0
+        </h2>
+
+        <p>
+          Total Quizzes
+        </p>
+
+      </div>
+
+      <!-- STUDENTS -->
+
+      <div class="card">
+
+        <h2>
+          120
+        </h2>
+
+        <p>
+          Students
+        </p>
+
+      </div>
+
+      <!-- PERFORMANCE -->
+
+      <div class="card">
+
+        <h2>
+          88%
+        </h2>
+
+        <p>
+          Performance
+        </p>
+
+      </div>
+
+      <!-- ACHIEVEMENTS -->
+
+      <div class="card">
+
+        <h2>
+          12
+        </h2>
+
+        <p>
+          Achievements
+        </p>
+
+      </div>
+
+    </div>
+
+    <!-- =========================
+         QUIZ SECTION
+    ========================== -->
+
+    <div class="recent-section">
+
+      <h2>
+        Recent Quizzes
+      </h2>
+
+      <table>
+
+        <!-- TABLE HEAD -->
+
+        <thead>
+
+          <tr>
+
+            <th>
+              Quiz
+            </th>
+
+            <th>
+              Subject
+            </th>
+
+            <th>
+              Action
+            </th>
+
+          </tr>
+
+        </thead>
+
+        <!-- QUIZ DATA -->
+
+        <tbody id="quizTableBody">
+
+          <!-- QUIZZES LOAD FROM JS -->
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </div>
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+
+  <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

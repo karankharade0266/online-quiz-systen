@@ -1,0 +1,26 @@
+body{
+  background:#0f172a;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  font-family:Arial;
+  color:white;
+}
+
+.result-box{
+  background:#1e293b;
+  padding:40px;
+  border-radius:20px;
+  text-align:center;
+}
+
+a{
+  display:inline-block;
+  margin-top:20px;
+  padding:15px 25px;
+  background:#38bdf8;
+  color:white;
+  text-decoration:none;
+  border-radius:10px;
+}

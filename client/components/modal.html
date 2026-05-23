@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    Modal
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="../css/components.css"
+  >
+
+</head>
+
+<body>
+
+<button id="openModalBtn">
+  Open Modal
+</button>
+
+<div class="modal" id="modal">
+
+  <div class="modal-content">
+
+    <span id="closeModalBtn">
+      &times;
+    </span>
+
+    <h2>
+      Quiz Submitted
+    </h2>
+
+    <p>
+      Your quiz has been submitted successfully.
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+
+const modal =
+document.getElementById(
+  "modal"
+);
+
+const openBtn =
+document.getElementById(
+  "openModalBtn"
+);
+
+const closeBtn =
+document.getElementById(
+  "closeModalBtn"
+);
+
+openBtn.onclick = () => {
+
+  modal.style.display =
+  "flex";
+
+};
+
+closeBtn.onclick = () => {
+
+  modal.style.display =
+  "none";
+
+};
+
+window.onclick = (e) => {
+
+  if(e.target == modal){
+
+    modal.style.display =
+    "none";
+
+  }
+
+};
+
+</script>
+
+</body>
+</html>
